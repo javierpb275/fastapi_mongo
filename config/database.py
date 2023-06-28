@@ -1,5 +1,8 @@
 import os
+from dotenv import load_dotenv
 from pymongo.mongo_client import MongoClient
+
+load_dotenv()
 
 uri = os.getenv("MONGO_CONNECTION_STRING")
 
